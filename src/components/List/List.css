@@ -1,0 +1,16 @@
+li {
+    list-style-type: none;
+    list-style: none;
+}
+.list__item {
+display: flex;
+  align-items: center;
+  gap: 40px;
+}
+p{
+    width: 300px;
+}
+.list__checkbox {
+    width: 20px;
+    height: 20px;
+}

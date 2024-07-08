@@ -1,0 +1,11 @@
+.h1 {
+   margin-left: 100px;
+}
+.app{
+    display: flex;
+    gap: 100px
+}
+.list__block{
+    display: flex;
+    gap: 100px
+}
