@@ -1,6 +1,4 @@
-https://codesandbox.io/p/github/MGEBRAT/list/draft/serverless-bird?file=%2Fsrc%2Fcomponents%2FApp%2FApp.tsx%3A12%2C19&workspaceId=a434f945-2525-4cf1-a2f1-8fc6c4731007
 
-https://codesandbox.io/invite/k3tfqt4n8mcftjw4
 
 # React + TypeScript + Vite
 
