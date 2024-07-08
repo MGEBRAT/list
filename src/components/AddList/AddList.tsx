@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import listStore from '../ListStore/ListStore'
+import AddLists from '../hooks/AddList/AddList'
 
 const AddList = () => {
   const [name, setName] = useState('')
   const [descr, setDescr] = useState('')
 
   const handleAdd = () => {
-    listStore.addItem(name, descr)
+    AddLists.addItem(name, descr)
     setName('')
     setDescr('')
   }
@@ -23,7 +23,7 @@ const AddList = () => {
         <input type="text" name='descr' value={descr} onChange={(e) => setDescr(e.target.value)} />
       </div>
       <br />
-      <button onClick={handleAdd}>Добавить</button>
+      <button disabled={!name || !descr} onClick={handleAdd}>Добавить</button>
     </div>
   )
 }

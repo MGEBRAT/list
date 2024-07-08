@@ -2,6 +2,7 @@ import { observer } from "mobx-react-lite"
 import List from "../List/List"
 import AddList from "../AddList/AddList"
 import './App.css'
+import HumsterCombat from "../HumsetCombat/HumsterCombat"
 
 const App = observer(() => {
   return (
@@ -11,6 +12,7 @@ const App = observer(() => {
         <div className='list__block'>
           <List />
           <AddList />
+          <HumsterCombat />
         </div>
       </div>
     </div>

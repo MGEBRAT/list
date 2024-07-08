@@ -1,7 +1,9 @@
 import { observer } from 'mobx-react-lite'
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import './List.css'
-import listStore from '../ListStore/ListStore'
+import listStore from '../hooks/ListStore/ListStore'
+import removeList  from '../hooks/RemoveList/RemoveList'
+import cheked from '../hooks/Cheked/Cheked'
 
 const List = () => {
   useEffect(() => {
@@ -21,9 +23,9 @@ const List = () => {
               className='list__checkbox'
               type="checkbox"
               checked={item.isDone}
-              onChange={() => listStore.toggleItem(item.id)}
+              onChange={() => cheked.toggleItem(item.id)}
             />
-            <button onClick={() => listStore.deleteItem(item.id)} >Удалить</button>
+            <button onClick={() => removeList.deleteItem(item.id)} >Удалить</button>
           </li>
         ))}
       </ul>
